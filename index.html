@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=5.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>机器人身份验证</title>
     <style>
         :root {
@@ -216,8 +216,8 @@
 
         if (!isSorted) {
             showResult("排序错误", "连排序都不会，你甚至不是一个合格的人类，更别说是AI了。");
-        } else if (duration < 1.0) {
-            // 机器人成功 (1秒内完成)
+        } else if (duration < 5.0) {
+            // 机器人成功 (5秒内完成)
             window.location.href = "https://www.bilibili.com/video/BV1GJ411x7h7";
         } else {
             // 判定为人类 (太慢了)
